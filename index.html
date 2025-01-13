@@ -4,97 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelBloom.co</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* General Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            padding: 0;
+            font-family: 'Glacial Indifference', Arial, sans-serif;
             color: #333;
+            background-color: #f9f9f9;
         }
 
+        /* Header */
         header {
+            background-color: #b195c4; /* Purple tone */
+            color: white;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
         }
 
         header h1 {
+            font-family: 'Tan Nimbus', serif;
             font-size: 2rem;
-            color: #7e5a9b;
+            margin: 0;
         }
 
-        nav ul {
+        header nav ul {
             list-style: none;
+            margin: 0;
             padding: 0;
             display: flex;
-            gap: 15px;
+            gap: 1rem;
         }
 
-        nav ul li a {
+        header nav ul li a {
+            color: white;
             text-decoration: none;
-            color: #333;
+            font-weight: bold;
             font-size: 1rem;
         }
 
-        .hero {
+        /* Hero Section */
+        #hero {
             text-align: center;
-            padding: 40px 20px;
+            padding: 3rem 2rem;
+            background-color: #e5f4e3; /* Light green background */
         }
 
-        .hero img {
-            max-width: 100%;
-            height: auto;
+        #hero h2 {
+            font-family: 'Tan Nimbus', serif;
+            font-size: 2.5rem;
+            color: #456751; /* Green tone */
+            margin-bottom: 1rem;
         }
 
-        .subheading {
-            margin: 20px 0;
+        #hero p {
             font-size: 1.2rem;
-            color: #666;
+            margin-bottom: 2rem;
         }
 
-        .features {
-            display: flex;
-            justify-content: space-around;
-            background-color: #4caf50;
-            padding: 20px;
+        .cta-button {
+            background-color: #456751; /* Green tone */
             color: white;
-        }
-
-        .features a {
             text-decoration: none;
-            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
             font-size: 1rem;
+        }
+
+        /* Features Section */
+        #features {
+            padding: 2rem;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        #features h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #456751; /* Green tone */
+        }
+
+        #features .feature {
+            margin: 1rem 0;
+        }
+
+        #features .feature h3 {
+            font-size: 1.5rem;
+            color: #b195c4; /* Purple tone */
+        }
+
+        #features .feature p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Review Section */
+        #reviews {
+            background-color: #e5f4e3; /* Light green */
+            padding: 2rem;
             text-align: center;
         }
 
-        .testimonial {
-            text-align: center;
-            padding: 20px;
+        .review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
         }
 
+        .review img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #456751; /* Green border */
+        }
+
+        .review-text {
+            font-size: 1rem;
+            color: #333;
+            text-align: left;
+        }
+
+        .review-author {
+            font-weight: bold;
+            color: #456751;
+        }
+
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 1rem;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #4caf50;
+            color: #456751;
             text-decoration: none;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                gap: 10px;
-            }
         }
     </style>
 </head>
@@ -103,38 +153,48 @@
         <h1>PixelBloom.co</h1>
         <nav>
             <ul>
-                <li><a href="shop.html">shop</a></li>
-                <li><a href="membership.html">membership</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="login.html">login</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="hero">
-        <p class="subheading">your hub for tools, templates, and creative inspo+</p>
-        <img src="assets/hero-image.png" alt="Floral graphic representation">
-    </div>
-
-    <div class="features">
-        <a href="social-media-roi.html">social media ROI</a>
-        <a href="web-templates.html">web templates</a>
-        <a href="social-media-scheduler.html">social media scheduler + analytics</a>
-        <a href="graphics-fonts.html">graphics + fonts</a>
-        <a href="canva-templates.html">canva templates</a>
-    </div>
-
-    <div class="testimonial">
-        <h2>don’t take just our word for it –</h2>
-        <blockquote>
-            <p>“I found a website that has truly transformed my life with its user-friendly design and engaging content. The top-notch resources and supportive community provide valuable insights and inspiration. I highly recommend it to anyone looking for positivity and personal growth.”</p>
-            <footer>- anna alyx</footer>
-        </blockquote>
-    </div>
-
+    <main>
+        <section id="hero">
+            <h2>Welcome to PixelBloom.co</h2>
+            <p>Your hub for creative tools, templates, and inspiration.</p>
+            <a href="#" class="cta-button">Explore the Shop</a>
+        </section>
+        <section id="features">
+            <h2>Why Choose PixelBloom?</h2>
+            <div class="feature">
+                <h3>Creative Templates</h3>
+                <p>Explore a collection of beautifully designed templates and fonts.</p>
+            </div>
+            <div class="feature">
+                <h3>Powerful Tools</h3>
+                <p>Unlock exclusive tools to enhance your creative projects.</p>
+            </div>
+            <div class="feature">
+                <h3>Membership Benefits</h3>
+                <p>Enjoy premium resources and priority support as a member.</p>
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="review">
+                <img src="circle-image.jpg" alt="Customer Photo">
+                <div class="review-text">
+                    <p>"PixelBloom.co has transformed the way I work. The tools and templates are simply amazing!"</p>
+                    <p class="review-author">- Alex Johnson</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a> | &copy; PixelBloom.co 2025</p>
+        <p>&copy; 2025 PixelBloom.co | Designed with love.</p>
+        <p>Contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a></p>
     </footer>
 </body>
 </html>
