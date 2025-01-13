@@ -5,36 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelBloom.co</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #7e5a9b;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .subheading {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            background-color: #4caf50;
+            padding: 20px;
+            color: white;
+        }
+
+        .features a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to PixelBloom.co</h1>
+        <h1>PixelBloom.co</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="membership.html">membership</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">login</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to PixelBloom.co, your hub for tools, templates, and creative inspiration.</p>
-        </section>
-        <section id="shop">
-            <h2>Shop</h2>
-            <p>Explore our collection of templates and fonts designed just for you.</p>
-        </section>
-        <section id="membership">
-            <h2>Membership</h2>
-            <p>Discover our membership plans and unlock exclusive tools and resources.</p>
-        </section>
-    </main>
-    <footer id="contact">
-        <p>Contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a></p>
-        <p>&copy; 2025 PixelBloom.co</p>
+
+    <div class="hero">
+        <p class="subheading">your hub for tools, templates, and creative inspo+</p>
+        <img src="assets/hero-image.png" alt="Floral graphic representation">
+    </div>
+
+    <div class="features">
+        <a href="social-media-roi.html">social media ROI</a>
+        <a href="web-templates.html">web templates</a>
+        <a href="social-media-scheduler.html">social media scheduler + analytics</a>
+        <a href="graphics-fonts.html">graphics + fonts</a>
+        <a href="canva-templates.html">canva templates</a>
+    </div>
+
+    <div class="testimonial">
+        <h2>don’t take just our word for it –</h2>
+        <blockquote>
+            <p>“I found a website that has truly transformed my life with its user-friendly design and engaging content. The top-notch resources and supportive community provide valuable insights and inspiration. I highly recommend it to anyone looking for positivity and personal growth.”</p>
+            <footer>- anna alyx</footer>
+        </blockquote>
+    </div>
+
+    <footer>
+        <p>contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a> | &copy; PixelBloom.co 2025</p>
     </footer>
 </body>
 </html>
