@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelBloom.co</title>
-    <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&family=Tan+Nimbus&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
             margin: 0;
+            padding: 0;
             font-family: 'Glacial Indifference', Arial, sans-serif;
-            line-height: 1.6;
             color: #333;
         }
 
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
+            padding: 1rem 2rem;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
         }
 
         header h1 {
             font-family: 'Tan Nimbus', serif;
             font-size: 2rem;
-            color: #7e5a9b;
+            color: #b195c4;
+            margin: 0;
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
             display: flex;
-            gap: 15px;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
         }
 
         nav ul li a {
@@ -41,120 +44,170 @@
             font-size: 1rem;
         }
 
-        .hero {
+        /* Hero Section */
+        #hero {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            gap: 20px;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #f9f9f9;
         }
 
-        .hero-text {
+        #hero .text {
             flex: 1;
-            max-width: 16.66%; /* 1/6 of the space */
-            font-size: 1.2rem;
-            color: #666;
-            text-align: left;
+            padding-right: 2rem;
         }
 
-        .hero img {
-            flex: 5; /* 5/6 of the space */
+        #hero .text h2 {
+            font-family: 'Glacial Indifference', Arial, sans-serif;
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        #hero .text p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        #hero .image {
+            flex: 1;
+        }
+
+        #hero .image img {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
         }
 
-        .features {
+        #color-palette {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        #color-palette .color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        /* Feature Links */
+        #features {
             display: flex;
             justify-content: space-around;
-            background-color: #4caf50;
-            padding: 20px;
+            background-color: #456751;
             color: white;
+            padding: 1rem;
         }
 
-        .features a {
+        #features a {
             text-decoration: none;
             color: white;
             font-size: 1rem;
-            text-align: center;
         }
 
-        .testimonial {
+        /* Reviews Section */
+        #reviews {
             text-align: center;
-            padding: 20px;
+            padding: 2rem;
         }
 
+        #reviews h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        #reviews p {
+            font-size: 1rem;
+            margin: 1rem auto;
+            max-width: 700px;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .reviewer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 1rem;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #4caf50;
+            color: white;
             text-decoration: none;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-text {
-                max-width: 100%;
-                text-align: center;
-                margin-bottom: 20px;
-            }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>PixelBloom.co</h1>
         <nav>
             <ul>
-                <li><a href="shop.html">shop</a></li>
-                <li><a href="membership.html">membership</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="login.html">login</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-text">
-            <p>your hub for tools, templates, and creative inspo+</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="text">
+            <h2>Your hub for tools, templates, and creative inspo+</h2>
+            <div id="color-palette">
+                <div class="color" style="background-color: #b195c4;"></div>
+                <div class="color" style="background-color: #7e5a9b;"></div>
+                <div class="color" style="background-color: #4c5870;"></div>
+                <div class="color" style="background-color: #456751;"></div>
+                <div class="color" style="background-color: #dca3b1;"></div>
+            </div>
         </div>
-        <img src="assets/hero-image.png" alt="Floral graphic representation">
+        <div class="image">
+            <img src="hero.image.png" alt="Purple Floral Brain">
+        </div>
+    </section>
+
+    <!-- Feature Links -->
+    <div id="features">
+        <a href="#">Social Media ROI</a>
+        <a href="#">Web Templates</a>
+        <a href="#">Social Media Scheduler + Analytics</a>
+        <a href="#">Graphics + Fonts</a>
+        <a href="#">Canva Templates</a>
     </div>
 
-    <div class="features">
-        <a href="social-media-roi.html">social media ROI</a>
-        <a href="web-templates.html">web templates</a>
-        <a href="social-media-scheduler.html">social media scheduler + analytics</a>
-        <a href="graphics-fonts.html">graphics + fonts</a>
-        <a href="canva-templates.html">canva templates</a>
-    </div>
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h3>Don’t take just our word for it –</h3>
+        <p>“I found a website that has truly transformed my life with its user-friendly design and engaging content. The top-notch resources and supportive community provide valuable insights and inspiration. I highly recommend it to anyone looking for positivity and personal growth.”</p>
+        <div class="reviewer">
+            <img src="reviewer-placeholder.jpg" alt="Anna Alyx">
+            <p>- Anna Alyx</p>
+        </div>
+    </section>
 
-    <div class="testimonial">
-        <h2>don’t take just our word for it –</h2>
-        <blockquote>
-            <p>“I found a website that has truly transformed my life with its user-friendly design and engaging content. The top-notch resources and supportive community provide valuable insights and inspiration. I highly recommend it to anyone looking for positivity and personal growth.”</p>
-            <footer>- anna alyx</footer>
-        </blockquote>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p>contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a> | &copy; PixelBloom.co 2025</p>
+        <p>Contact us at <a href="mailto:hello@pixelbloom.co">hello@pixelbloom.co</a> | &copy; PixelBloom.co 2025</p>
     </footer>
 </body>
 </html>
