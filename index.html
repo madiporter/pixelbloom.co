@@ -62,34 +62,18 @@
             font-family: 'Glacial Indifference', Arial, sans-serif;
             font-size: 1.5rem;
             color: #333;
+            font-weight: normal; /* Simple, non-bold font */
             margin-bottom: 1rem;
         }
 
-        #hero .text p {
-            font-size: 1rem;
-            margin: 0;
-        }
-
         #hero .image {
-            flex: 1;
+            flex: 0.75; /* Adjust image section to take up 75% of the space */
         }
 
         #hero .image img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-        }
-
-        #color-palette {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        #color-palette .color {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
         }
 
         /* Feature Links */
@@ -173,13 +157,6 @@
     <section id="hero">
         <div class="text">
             <h2>Your hub for tools, templates, and creative inspo+</h2>
-            <div id="color-palette">
-                <div class="color" style="background-color: #b195c4;"></div>
-                <div class="color" style="background-color: #7e5a9b;"></div>
-                <div class="color" style="background-color: #4c5870;"></div>
-                <div class="color" style="background-color: #456751;"></div>
-                <div class="color" style="background-color: #dca3b1;"></div>
-            </div>
         </div>
         <div class="image">
             <img src="hero.image.png" alt="Purple Floral Brain">
